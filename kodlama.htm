@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Bursa Çözüm Koleji | Karbon Ayak İzi Projesi</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#e8f5e9;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background:#1b5e20;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header img{
+    width:100px;
+    display:block;
+    margin:0 auto 10px auto;
+}
+
+.section{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    max-width:900px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#2e7d32;
+}
+
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+.result{
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.tree{
+    font-size:22px;
+    color:green;
+    text-align:center;
+}
+
+.certificate{
+    border:3px dashed green;
+    padding:20px;
+    margin-top:20px;
+    text-align:center;
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Bursa Çözüm Koleji Logosu">
+    <h1>BURSA ÇÖZÜM KOLEJİ</h1>
+    <h2>KARBON AYAK İZİ PROJESİ</h2>
+</header>
+
+<form id="anket" class="section">
+
+<h2>🌍 Karbon Ayak İzi Anketi</h2>
+
+<p>1) Okula nasıl gelip gidiyorsunuz?</p>
+<input type="radio" name="s1" value="4"> Yürüyerek/Bisikletle<br>
+<input type="radio" name="s1" value="3"> Okul servisiyle<br>
+<input type="radio" name="s1" value="2"> Toplu taşıma<br>
+<input type="radio" name="s1" value="1"> Ailem arabayla bırakıyor<br>
+
+<p>2) Evde odaların kapıları genellikle nasıldır?</p>
+<input type="radio" name="s2" value="1"> Her zaman açık<br>
+<input type="radio" name="s2" value="2"> Bazen açık unutulur<br>
+<input type="radio" name="s2" value="3"> Genellikle kapalı<br>
+<input type="radio" name="s2" value="4"> Her zaman kapalı<br>
+
+<p>3) Evdeki ışıklar kapalı mıdır?</p>
+<input type="radio" name="s3" value="4"> Sadece kullandığım oda açık<br>
+<input type="radio" name="s3" value="3"> Çıkınca kapatırım<br>
+<input type="radio" name="s3" value="2"> Bazen unutuyorum<br>
+<input type="radio" name="s3" value="1"> Genelde açık<br>
+
+<p>4) Plastik şişeleri nasıl değerlendiriyorsun?</p>
+<input type="radio" name="s4" value="4"> Geri dönüşüm<br>
+<input type="radio" name="s4" value="3"> Projelerde kullanırım<br>
+<input type="radio" name="s4" value="2"> Çöpe atarım<br>
+<input type="radio" name="s4" value="1"> Bilmiyorum<br>
+
+<p>5) Şarj aletini…</p>
+<input type="radio" name="s5" value="4"> Prizden çekerim<br>
+<input type="radio" name="s5" value="3"> Bir süre sonra çekerim<br>
+<input type="radio" name="s5" value="2"> Gece boyunca takılı<br>
+<input type="radio" name="s5" value="1"> Hep prizde<br>
+
+<p>6) Yemek tercihin?</p>
+<input type="radio" name="s6" value="4"> Ev yemeği<br>
+<input type="radio" name="s6" value="3"> Sebze ağırlıklı<br>
+<input type="radio" name="s6" value="2"> Etli<br>
+<input type="radio" name="s6" value="1"> Fast food<br>
+
+<p>7) Kağıt kullanımında…</p>
+<input type="radio" name="s7" value="4"> Dijital<br>
+<input type="radio" name="s7" value="3"> Arkalı önlü<br>
+<input type="radio" name="s7" value="2"> Normal<br>
+<input type="radio" name="s7" value="1"> Çok israf<br>
+
+<p>8) Diş fırçalarken…</p>
+<input type="radio" name="s8" value="1"> Musluk açık<br>
+<input type="radio" name="s8" value="3"> Musluk kapalı<br>
+<input type="radio" name="s8" value="2"> Uzun açık<br>
+<input type="radio" name="s8" value="4"> Bardakla<br>
+
+<p>9) Eski eşyalarımı…</p>
+<input type="radio" name="s9" value="4"> Bağış<br>
+<input type="radio" name="s9" value="3"> Geri dönüşüm<br>
+<input type="radio" name="s9" value="1"> Çöpe atarım<br>
+<input type="radio" name="s9" value="2"> Bekletirim<br>
+
+<p>10) Evde kaç kişi yaşıyor?</p>
+<input type="radio" name="s10" value="4"> 1–3<br>
+<input type="radio" name="s10" value="3"> 3–6<br>
+<input type="radio" name="s10" value="2"> 6–9<br>
+<input type="radio" name="s10" value="1"> 9+<br>
+
+<p>11) Artan yemekler</p>
+<input type="radio" name="s11" value="4"> Bitiririm<br>
+<input type="radio" name="s11" value="3"> Hayvanlara veririm<br>
+<input type="radio" name="s11" value="1"> Çöpe atarım<br>
+<input type="radio" name="s11" value="4"> Ertesi gün değerlendiririm<br>
+
+<br>
+<button type="button" onclick="hesapla()">Karbon Ayak İzini Hesapla</button>
+</form>
+
+<div class="section result" id="sonuc"></div>
+<div class="section tree" id="agacPaneli"></div>
+
+<div class="section">
+<h2>🏅 Sertifika</h2>
+<input type="text" id="isim" placeholder="Ad Soyad">
+<br><br>
+<button onclick="sertifika()">Sertifikayı Göster</button>
+
+<div class="certificate" id="sertifika">
+<h2>ÇEVRE DOSTU ÖĞRENCİ SERTİFİKASI</h2>
+<p>Bu sertifika</p>
+<h3 id="sertifikaIsim"></h3>
+<p>adına düzenlenmiştir.</p>
+<p>Bursa Çözüm Koleji</p>
+</div>
+</div>
+
+<script>
+function hesapla(){
+    let toplam=0;
+    for(let i=1;i<=11;i++){
+        let secim=document.querySelector('input[name="s'+i+'"]:checked');
+        if(secim) toplam+=Number(secim.value);
+    }
+
+    let agac=0;
+    let durum="";
+
+    if(toplam>=36){
+        agac=1;
+        durum="🌱 Karbon ayak izin çok düşük!";
+    }else if(toplam>=26){
+        agac=3;
+        durum="🌿 Orta seviye, daha iyi olabilir!";
+    }else if(toplam>=15){
+        agac=5;
+        durum="⚠️ Karbon ayak izin yüksek!";
+    }else{
+        agac=8;
+        durum="❗ Çok yüksek karbon ayak izi!";
+    }
+
+    document.getElementById("sonuc").innerHTML=
+        "Toplam Puan: "+toplam+"<br>"+durum;
+
+    document.getElementById("agacPaneli").innerHTML=
+        "🌳 Bu puana göre dikmen gereken ağaç sayısı: <b>"+agac+"</b>";
+}
+
+function sertifika(){
+    let ad=document.getElementById("isim").value;
+    if(ad===""){
+        alert("Lütfen adınızı giriniz");
+        return;
+    }
+    document.getElementById("sertifikaIsim").innerText=ad;
+    document.getElementById("sertifika").style.display="block";
+}
+
+</script>
+
+</body>
+</html>
